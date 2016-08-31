@@ -1,0 +1,35 @@
+package com.yang.interviewdemo.adapter;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+import com.yang.interviewdemo.R;
+
+public class StoreAdapter extends BaseAdapter {
+
+    LayoutInflater inflater;
+
+    @Override
+    public int getCount() {
+        return 0;
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return null;
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return 0;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        return null;
+    }
+}
