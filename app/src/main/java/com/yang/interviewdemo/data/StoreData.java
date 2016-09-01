@@ -1,34 +1,48 @@
 package com.yang.interviewdemo.data;
 
+import java.io.Serializable;
+
 /**
  * Created by Administrator on 2016/8/31.
  */
-public class StoreData {
-    String storeId;
-    String storeName;
+public class StoreData implements Serializable{
+
+    private static final long serialVersionUID = 1L;
+
+    int id;
+    String ID;
+    String name;
     String businessCenter;
     String foodType;
     String distance;
     String consume;
-    Double totalScore;
+    float totalScore;
     int likeCount;
     String picUrl;
     String groupInfo;
 
-    public String getStoreId() {
-        return storeId;
+    public int getid (){
+        return id;
     }
 
-    public void setStoreId(String storeId) {
-        this.storeId = storeId;
+    public void setid(int id) {
+        this.id = id;
     }
 
-    public String getStoreName() {
-        return storeName;
+    public String getId() {
+        return ID;
     }
 
-    public void setStoreName(String storeName) {
-        this.storeName = storeName;
+    public void setId(String ID) {
+        this.ID = ID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getBusinessCenter() {
@@ -63,11 +77,11 @@ public class StoreData {
         this.consume = consume;
     }
 
-    public Double getTotalScore() {
+    public Float getTotalScore() {
         return totalScore;
     }
 
-    public void setTotalScore(Double totalScore) {
+    public void setTotalScore(float totalScore) {
         this.totalScore = totalScore;
     }
 
